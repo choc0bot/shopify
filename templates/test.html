@@ -1,0 +1,32 @@
+<html>
+<head>
+<link rel='stylesheet' href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.css">
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.5/jquery.bxslider.js"></script>
+</head>
+
+<body>
+<ul class="bxslider">
+  <li class="pic" id="mona"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/Mona_Lisa.jpg/128px-Mona_Lisa.jpg" /></li>
+  <li class="pic" id="dog"><img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/OriginalNipper.jpg" /></li>
+  <li class="pic" id="bridge"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Le_pont_de_la_C%C3%A8ze_pr%C3%A8s_de_Saint-Andr%C3%A9-de-Roquepertuis%2C_ici_une_personne_qui_s%27est_jet%C3%A9_du_pont.JPG/320px-Le_pont_de_la_C%C3%A8ze_pr%C3%A8s_de_Saint-Andr%C3%A9-de-Roquepertuis%2C_ici_une_personne_qui_s%27est_jet%C3%A9_du_pont.JPG" /></li>
+</ul>
+
+<div class="subject"></div>
+
+</body>
+<script>
+$('.bxslider').bxSlider();
+
+$('.pic').click(function() {
+    var pick = $(this).attr("id");
+    $( ".subject" ).html(pick);
+});
+
+$('.checkclick').click(function() {
+    alert("check click");
+});
+</script>
+
+</html>

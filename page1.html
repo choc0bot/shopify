@@ -1,0 +1,18 @@
+<script type="text/javascript">
+  ShopifyApp.ready(function(){
+    ShopifyApp.Bar.initialize({
+      icon: 'http://localhost:3001/assets/header-icon.png',
+      title: 'The App Title',
+      buttons: { 
+        primary: {
+          label: 'Save', 
+          message: 'save', 
+          callback: function(){ 
+            ShopifyApp.Bar.loadingOn();
+            doSomeCustomAction();
+          }
+        }
+      }
+    });
+  });
+</script>

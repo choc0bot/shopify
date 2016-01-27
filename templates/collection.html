@@ -1,0 +1,8 @@
+{% extends "base.html" %}
+{% block content %}
+    {% for myproduct in dacollect %}
+        {{ myproduct[0] }}
+        {{ myproduct[1] }}
+    {% endfor %}
+
+{% endblock %}

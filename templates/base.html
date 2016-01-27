@@ -1,0 +1,10 @@
+<head>
+  <script src="https://cdn.shopify.com/s/assets/external/app.js"></script>
+  <script type="text/javascript">
+    ShopifyApp.init({
+      apiKey: {{ g.api_key }},
+      shopOrigin: 'https://choc0bot.myshopify.com'
+    });
+  </script>
+  {% block content %}{% endblock %}
+</head>
